@@ -1,6 +1,7 @@
 import math
-#quadratic equation
-def solve_quadratic(a, b, c):
+
+# quadratic equation
+def solve_quadratic(a: int | float, b: int | float, c: int | float) -> str:
     # Calculate the discriminant
     discriminant = b**2 - 4*a*c
     
@@ -17,7 +18,7 @@ def solve_quadratic(a, b, c):
         imaginary_part = math.sqrt(abs(discriminant)) / (2*a)
         return f"Roots are complex: {real_part} + {imaginary_part}i, {real_part} - {imaginary_part}i"
 
-# Accept input for coefficients a, b, and c
+# accept input for coefficients a, b, and c
 a = float(input("Enter coefficient a: "))
 b = float(input("Enter coefficient b: "))
 c = float(input("Enter coefficient c: "))
